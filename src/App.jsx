@@ -1,30 +1,7 @@
 const App = () => {
-  const name = 'Arafat Jamil';
-  const x = 10;
-  const y = 20;
-  const names = ['Arafat', 'Jamil', 'Arafat', 'Names'];
-  const loggedIn = true;
-  const styles = {
-	color: 'green',
-	fontSize: '55px'
-  }
-
   return (
-    <>
-      <div className="text-5xl">App</div>
-      <p style={{color:'red',fontSize:'24px'}}>Hi {name}!</p>
-      <p style={styles}>
-        The sum of {x} and {y} is {x + y}
-      </p>
-      <ul>
-        {names.map((name, index) => {
-          return <li key={index}>{name}</li>;
-        })}
-      </ul>
+	<div>App</div>
+  )
+}
 
-      {loggedIn ? <h1>Hello member</h1> : <h1>Hello guest</h1> }
-    </>
-  );
-};
-
-export default App;
+export default App
